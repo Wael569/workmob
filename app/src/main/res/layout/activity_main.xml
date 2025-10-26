@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/drag_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/draggable_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sample_image"
+        android:tag="DRAGGABLE" />
+</LinearLayout>
