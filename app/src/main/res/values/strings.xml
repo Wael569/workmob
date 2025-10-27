@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Gymora</string>
+    <string-array name="my_items1">
+        <item>Gender</item>
+    <item>men</item>
+    <item>women</item>
+</string-array>
+    <string-array name="my_items2">
+        <item>Level</item>
+        <item>beginner</item>
+        <item>intermediate</item>
+        <item>professionnal</item>
+    </string-array>
 </resources>

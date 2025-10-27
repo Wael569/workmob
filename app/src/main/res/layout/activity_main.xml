@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:id="@+id/drag_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/main"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/draggable_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/sample_image"
-        android:tag="DRAGGABLE" />
+    <include
+        android:id="@+id/included_layout_one"
+        layout="@layout/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <include
+        android:id="@+id/included_layout_two"
+        layout="@layout/activity_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <include
+        android:id="@+id/included_layout_three"
+        layout="@layout/activity_home"/>
+
+
+
 </LinearLayout>
