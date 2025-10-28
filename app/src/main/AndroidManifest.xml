@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gymora">
         <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -22,15 +25,15 @@
         </activity>
         <activity
             android:name=".FormActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <activity
             android:name=".HomeActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>
