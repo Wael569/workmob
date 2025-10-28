@@ -1,41 +1,55 @@
 package com.gymora;
 
+// Make sure these are imported
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class FormActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        // Set the content view to your new form layout
         setContentView(R.layout.activity_form);
 
-        // Apply window insets to the root layout
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.form_layout), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        // --- SPINNER SETUP (The Easy Way) ---
 
-        // Optional: Add functionality to the submit button
+        // 1. Find your Spinners
+        Spinner spinner1 = findViewById(R.id.spinner1);
+        Spinner spinner2 = findViewById(R.id.spinner2);
+
+        // 2. Create an adapter for the first spinner
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(
+                this,
+                R.array.my_items1, // Your data from strings.xml
+                R.layout.custom_spinner_item // YOUR NEW CUSTOM LAYOUT
+        );
+        // Set the layout for the dropdown list itself
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // 3. Create an adapter for the second spinner
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(
+                this,
+                R.array.my_items2, // Your data from strings.xml
+                R.layout.custom_spinner_item // RE-USE THE SAME CUSTOM LAYOUT
+        );
+        // Set the layout for the dropdown list itself
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // 4. Apply the adapters to the Spinners
+        spinner1.setAdapter(adapter1);
+        spinner2.setAdapter(adapter2);
+
+
+        // --- YOUR EXISTING BUTTON LOGIC ---
         Button submitButton = findViewById(R.id.submit_button);
         submitButton.setOnClickListener(v -> {
-            // You can add logic here to handle the form submission
-            Toast.makeText(FormActivity.this, "Form Submitted! Taking you home ..", Toast.LENGTH_SHORT).show();
-
-            });
-        Button submit_button = findViewById(R.id.submit_button);
-        submit_button.setOnClickListener(v -> {
+            Toast.makeText(FormActivity.this, "Form Submitted!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(FormActivity.this, HomeActivity.class);
             startActivity(intent);
         });

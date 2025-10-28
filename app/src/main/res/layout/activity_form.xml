@@ -5,15 +5,13 @@
     android:id="@+id/form_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#141414">
+    android:background="#020202">
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/spinner2"
         android:layout_width="373dp"
         android:layout_height="54dp"
         android:layout_marginTop="16dp"
-        android:background="#9EFFFFFF"
-        android:entries="@array/my_items2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
         app:layout_constraintVertical_bias="0.065" />
 
     <TextView
@@ -88,12 +86,11 @@
         android:layout_width="373dp"
         android:layout_height="54dp"
         android:layout_marginTop="16dp"
-        android:background="#87FFFFFF"
         android:ems="10"
         android:hint="Weight"
         android:inputType="text"
         android:textColor="@color/black"
-        android:textColorHint="#000000"
+        android:textColorHint="#9CFDF8F8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,11 +105,11 @@
         android:hint="Age"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textColorHint="#69FFFFFF"
+        android:textColorHint="#A3FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <TextView
         android:id="@+id/textView6"
@@ -138,20 +135,18 @@
         android:hint="Name"
         android:inputType="text"
         android:textColor="@color/white"
-        android:textColorHint="#67FFFFFF"
+        android:textColorHint="#BAFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinner1"
         android:layout_width="373dp"
         android:layout_height="54dp"
         android:layout_marginTop="16dp"
-        android:background="#A7F2F2F2"
-        android:backgroundTint="#E0D8D8"
-        android:entries="@array/my_items1"
+        android:background="#591515"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
