@@ -27,4 +27,10 @@
         layout="@layout/activity_home" />
 
 
+    <include
+        android:id="@+id/included_layout_five"
+        layout="@layout/activity_menu" />
+
+
+
 </LinearLayout>

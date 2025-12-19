@@ -14,18 +14,67 @@
         <activity
             android:name=".MenuActivity"
             android:exported="false" />
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".FormActivity"
             android:exported="false"></activity>
+        <activity
+            android:name=".MealsActivity"
+            android:exported="false"></activity>
+        
+        <!-- Muscle Activities -->
+        <activity android:name=".ChestActivity" android:exported="false"/>
+        <activity android:name=".ShouldersActivity" android:exported="false"/>
+        <activity android:name=".TrapsActivity" android:exported="false"/>
+        <activity android:name=".BicepsActivity" android:exported="false"/>
+        <activity android:name=".TricepsActivity" android:exported="false"/>
+        <activity android:name=".LatsActivity" android:exported="false"/>
+        <activity android:name=".AbsActivity" android:exported="false"/>
+        <activity android:name=".ObliquesActivity" android:exported="false"/>
+        <activity android:name=".HamstringsActivity" android:exported="false"/>
+        <activity android:name=".QuadsActivity" android:exported="false"/>
+        <activity android:name=".CalvesActivity" android:exported="false"/>
+        <activity android:name=".BackActivity" android:exported="false"/>
+        <activity android:name=".ArmsActivity" android:exported="false"/>
+        <activity android:name=".LegsActivity" android:exported="false"/>
+        <activity android:name=".AboutUsActivity" android:exported="false"/>
+
+        <!-- Chest Programme Activities -->
+        <activity android:name=".Programme1Activity" android:exported="false"/>
+        <activity android:name=".Programme2Activity" android:exported="false"/>
+        <activity android:name=".Programme3Activity" android:exported="false"/>
+        
+        <!-- Back Programme Activities -->
+        <activity android:name=".BProgramme1Activity" android:exported="false"/>
+        <activity android:name=".BProgramme2Activity" android:exported="false"/>
+        <activity android:name=".BProgramme3Activity" android:exported="false"/>
+        
+        <!-- Arms Programme Activities -->
+        <activity android:name=".ProgrammeA1Activity" android:exported="false"/>
+        <activity android:name=".ProgrammeA2Activity" android:exported="false"/>
+        <activity android:name=".ProgrammeA3Activity" android:exported="false"/>
+        <activity android:name=".ProgrammeA4Activity" android:exported="false"/>
+
+        <!-- Legs Programme Activities -->
+        <activity android:name=".ProgrammeC1Activity" android:exported="false"/>
+        <activity android:name=".ProgrammeC2Activity" android:exported="false"/>
+        <activity android:name=".ProgrammeC3Activity" android:exported="false"/>
+        <activity android:name=".ProgrammeC4Activity" android:exported="false"/>
+        
+        <!-- Meals Activities -->
+        <activity android:name=".Meals1Activity" android:exported="false"/>
+        <activity android:name=".Meals2Activity" android:exported="false"/>
+        <activity android:name=".Meals3Activity" android:exported="false"/>
+        <activity android:name=".Meals4Activity" android:exported="false"/>
 
         <meta-data
             android:name="preloaded_fonts"
@@ -33,7 +82,8 @@
 
         <activity
             android:name=".HomeActivity"
-            android:exported="false"></activity>
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

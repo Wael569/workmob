@@ -24,6 +24,7 @@
 
             <!-- Chest Card -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_chest"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_margin="8dp"
@@ -33,48 +34,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:src="@drawable/chest"-->
-<!--                        android:scaleType="centerCrop" />-->
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Chest"
-                        android:textColor="@android:color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="16dp"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Legs Card -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="16dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <!--                    <ImageView-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:src="@drawable/legs" -->
-                    <!--                        android:scaleType="centerCrop" />-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/db91250f_4df4_4a08_ba18_d450074d06fb" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_margin="16dp"
-                        android:text="Legs"
-                        android:textColor="@android:color/white"
+                        android:text="CHEST"
+                        android:textColor="@color/black"
                         android:textSize="24sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -82,6 +54,7 @@
 
             <!-- Back Card -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_back"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_margin="8dp"
@@ -91,55 +64,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:src="@drawable/back"-->
-<!--                        android:scaleType="centerCrop" />-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/_b41954c_dd6b_48c3_ae4c_9223025bdb89" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Back"
-                        android:textColor="@android:color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
                         android:layout_alignParentBottom="true"
-                        android:layout_margin="16dp"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Shoulders Card -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="16dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:src="@drawable/shoulders"-->
-<!--                        android:scaleType="centerCrop" />-->
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Shoulders"
-                        android:textColor="@android:color/white"
+                        android:layout_margin="16dp"
+                        android:text="BACK"
+                        android:textColor="@color/black"
                         android:textSize="24sp"
-                        android:textStyle="bold"
-                        android:layout_alignParentBottom="true"
-                        android:layout_margin="16dp"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
             <!-- Arms Card -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_arms"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_margin="8dp"
@@ -149,21 +94,51 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="match_parent"-->
-<!--                        android:src="@drawable"-->
-<!--                        android:scaleType="centerCrop" />-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/_ea381e5_d98a_43c9_b840_066881b487fa" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Arms"
-                        android:textColor="@android:color/white"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
                         android:layout_alignParentBottom="true"
-                        android:layout_margin="16dp"/>
+                        android:layout_margin="16dp"
+                        android:text="ARMS"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Legs Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_legs"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fc1c6f85_78d0_4476_9806_ff4be2acf37a" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="16dp"
+                        android:text="LEGS"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -174,7 +149,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#111111"
+        android:background="#111111"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

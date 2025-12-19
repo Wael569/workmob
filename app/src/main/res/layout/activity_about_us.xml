@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recipe_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Gymora is a comprehensive fitness and wellness mobile application designed to support individuals in achieving a healthier, stronger, and more balanced lifestyle. The app combines structured workout programs with healthy meal guidance, making it easier for users to stay consistent, motivated, and informed throughout their fitness journey.  Gymora offers a wide range of workout programs suitable for different fitness levels, from beginners to advanced athletes. Each program is carefully designed to target specific goals such as muscle building, weight loss, strength improvement, endurance, and overall physical conditioning. The exercises are organized in a clear and practical way, helping users follow proper training routines and understand which muscle groups are involved.  In addition to workout programs, Gymora provides healthy meal ideas to support fitness goals. The nutrition content focuses on balanced, nutritious meals that promote energy, recovery, and long-term health. By combining training and nutrition in one application, Gymora aims to offer a complete solution for users who want to improve both their physical performance and eating habits.  The application is designed with simplicity and usability in mind. Its intuitive interface allows users to easily navigate between workouts, meal plans, and progress tracking, making Gymora accessible to everyone, regardless of their fitness experience or technical background.  Gymora was developed by Khoubayb Bazzez and Wael Abidi, students at the Institut Supérieur de Gestion de Sousse (ISG Sousse). The app was created as part of their academic and practical experience, with the goal of applying their knowledge in information systems and digital solutions to a real-world problem: helping people adopt a healthier lifestyle through technology.  With Gymora, fitness becomes more structured, nutrition becomes more accessible, and motivation becomes easier to maintain. The app is built to grow and evolve, with the vision of continuously improving features and content to better serve its users."
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Gymora"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
